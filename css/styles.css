@@ -710,6 +710,7 @@ body {
   width: 358px;
   height: 50px;
   margin-right: 12px;
+  padding-left: 16px;
   background: #2f303a;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -809,7 +810,10 @@ body {
   width: 528px;
   min-height: 581px;
 
-  background-color: #fff;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
 }
 
 .form {
@@ -879,6 +883,7 @@ body {
 }
 .form-input {
   width: 100%;
+  height: 40px;
   padding: 14px;
   padding-left: 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -892,10 +897,10 @@ body {
 }
 .form-icon {
   position: absolute;
-  top: 34%;
-  left: 28px;
   display: inline-block;
-  transform: translate(-50%);
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
   fill: #212121;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -906,6 +911,7 @@ body {
 
 .form-textarea {
   width: 100%;
+  height: 120px;
   resize: none;
   padding: 12px 16px;
   margin-bottom: 10px;
@@ -928,6 +934,9 @@ body {
 .form-checkbox {
   position: relative;
   display: block;
+  min-width: 425px;
+  margin-left: 13px;
+  margin-bottom: 30px;
 }
 .checkbox {
   visibility: hidden;
@@ -957,13 +966,18 @@ body {
 
   color: #757575;
 }
+.checkbox-link {
+  font-size: 14px;
+  line-height: 1.71;
+
+  color: var(--accent-color);
+}
 .form-btn {
   display: flex;
   width: 200px;
   height: 50px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 32px;
   margin-bottom: 40px;
   font-weight: 700;
   font-size: 16px;
